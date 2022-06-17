@@ -58,6 +58,7 @@ class COCO(data.Dataset):
         else:
             file_names = file_names
 
+
         for file_name in file_names:
             self.train.append(os.path.join(mypath,'image',file_name))
             self.mask.append(os.path.join(mypath,'mask',file_name))
